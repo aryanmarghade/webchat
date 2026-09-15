@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluetooth Chat</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Available Devices</h2>
+            <ul id="device-list"></ul>
+            <button id="refresh-btn">Refresh</button>
+        </aside>
+        <main class="chat-area">
+            <div id="chat-log" class="chat-log"></div>
+            <div class="input-bar">
+                <input type="text" id="message-input" placeholder="Type a message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
