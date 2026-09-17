@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>WebChat</h1>
+        <div id="status" class="status disconnected">
+            Disconnected
+        </div>
+    </header>
+
+    <section id="joinScreen" class="join-screen">
+
+        <input
+            id="username"
+            type="text"
+            placeholder="Enter username"
+            maxlength="30"
+        >
+
+        <input
+            id="room"
+            type="text"
+            placeholder="Enter room ID"
+            maxlength="30"
+        >
+
+        <button id="joinBtn">
+            Join Chat
+        </button>
+
+    </section>
+
+    <section id="chatScreen" class="chat-screen hidden">
+
+        <div class="room-info">
+            <span>Room:</span>
+            <strong id="roomName"></strong>
+
+            <button id="leaveBtn">
+                Leave
+            </button>
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+        <div class="message-area">
+
+            <input
+                id="messageInput"
+                type="text"
+                placeholder="Type a message..."
+                maxlength="500"
+            >
+
+            <button id="sendBtn">
+                Send
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
